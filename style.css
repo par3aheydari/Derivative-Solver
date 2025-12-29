@@ -1,0 +1,75 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(270deg, #110000, #220000, #110000);
+    background-size: 600% 600%;
+    animation: gradientMove 20s ease infinite;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .container {
+    background: rgba(30,30,30,0.9);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    width: 700px;
+    box-shadow: 0 0 20px rgba(255,136,0,0.5);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #ff4400;
+  }
+  
+  .equation {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .equation input {
+    width: 300px;
+    padding: 5px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #ff8800;
+    background-color: #333333;
+    color: #ffffff;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff8800;
+    color: #1a1a1a;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #cc7000;
+  }
+  
+  .result {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  
+  #derivativeCanvas {
+    margin-top: 20px;
+    border: 2px solid #ff8800;
+    border-radius: 8px;
+    background-color: #1a1a1a;
+  }
+  
